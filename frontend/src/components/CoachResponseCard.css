@@ -1,0 +1,157 @@
+/* ===== COACH RESPONSE CARD ===== */
+
+.coach-card {
+    animation: card-enter 0.5s ease;
+    border-color: var(--border-accent) !important;
+}
+
+.coach-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.coach-icon {
+    font-size: 1.3rem;
+}
+
+.coach-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-light);
+}
+
+/* --- Sections container --- */
+.coach-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* --- Individual section --- */
+.coach-section {
+    padding: 16px;
+    border-radius: var(--radius-md);
+    border: 1px solid;
+    animation: text-reveal 0.4s ease;
+}
+
+.coach-section:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.coach-section:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.coach-section:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Section types */
+.section-english {
+    background: var(--english-bg);
+    border-color: var(--english-border);
+}
+
+.section-hindi {
+    background: var(--hindi-bg);
+    border-color: var(--hindi-border);
+}
+
+.section-next {
+    background: var(--next-bg);
+    border-color: var(--next-border);
+}
+
+.section-use {
+    background: var(--use-bg);
+    border-color: var(--use-border);
+}
+
+/* --- Section label --- */
+.section-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+.section-english .section-label {
+    color: var(--english-accent);
+}
+
+.section-hindi .section-label {
+    color: var(--hindi-accent);
+}
+
+.section-next .section-label {
+    color: var(--next-accent);
+}
+
+.section-use .section-label {
+    color: var(--use-accent);
+}
+
+.section-emoji {
+    font-size: 0.9rem;
+}
+
+/* --- Section content --- */
+.section-content {
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+.english-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--english-accent);
+}
+
+.hindi-text {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--hindi-accent);
+}
+
+.next-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--next-accent);
+}
+
+.use-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--use-accent);
+}
+
+/* --- Responsive --- */
+@media (max-width: 640px) {
+    .coach-section {
+        padding: 14px;
+    }
+
+    .english-text {
+        font-size: 1.1rem;
+    }
+
+    .hindi-text {
+        font-size: 0.95rem;
+    }
+
+    .next-text {
+        font-size: 0.92rem;
+    }
+}

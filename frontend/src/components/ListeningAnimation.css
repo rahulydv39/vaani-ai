@@ -1,0 +1,19 @@
+/* ===== LISTENING WAVEFORM ===== */
+
+.listening-waveform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    height: 36px;
+    margin-top: 4px;
+}
+
+.waveform-bar {
+    width: 4px;
+    height: 6px;
+    border-radius: 4px;
+    background: var(--listening-color);
+    animation: wave-bar 0.8s ease-in-out infinite;
+    box-shadow: 0 0 6px rgba(239, 68, 68, 0.3);
+}

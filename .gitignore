@@ -1,0 +1,25 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Models (VERY LARGE)
+models/
+*.gguf
+*.bin
+
+# Temp audio
+*.wav
+*.mp3
+/tmp/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Mac
+.DS_Store
+
+# Env
+.env

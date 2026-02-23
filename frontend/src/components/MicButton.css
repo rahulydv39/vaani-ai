@@ -1,0 +1,125 @@
+/* ===== MIC BUTTON ===== */
+
+.mic-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+}
+
+/* --- Idle pulse ring --- */
+.mic-idle-ring {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    opacity: 0.15;
+    animation: pulse-ring 3s ease-out infinite;
+}
+
+/* --- Listening ripples --- */
+.mic-ripple {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--listening-color);
+    animation: ripple-out 1.5s ease-out infinite;
+}
+
+.mic-ripple-2 {
+    animation-delay: 0.3s;
+}
+
+.mic-ripple-3 {
+    animation-delay: 0.6s;
+}
+
+/* --- Button --- */
+.mic-button {
+    position: relative;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all var(--transition-base);
+    background: linear-gradient(145deg, rgba(124, 92, 252, 0.25), rgba(124, 92, 252, 0.1));
+    border: 1.5px solid rgba(124, 92, 252, 0.3);
+    box-shadow: 0 0 20px rgba(124, 92, 252, 0.15);
+}
+
+.mic-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Idle breathing */
+.mic-button.mic-idle {
+    animation: mic-breathe 3s ease-in-out infinite;
+}
+
+.mic-button.mic-idle:not(:disabled):hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px var(--accent-glow), 0 0 80px rgba(124, 92, 252, 0.15);
+    border-color: var(--accent);
+    background: linear-gradient(145deg, rgba(124, 92, 252, 0.35), rgba(124, 92, 252, 0.15));
+}
+
+.mic-button.mic-idle:not(:disabled):active {
+    transform: scale(0.95);
+}
+
+/* Listening */
+.mic-button.mic-listening {
+    background: linear-gradient(145deg, rgba(239, 68, 68, 0.35), rgba(239, 68, 68, 0.15));
+    border-color: rgba(239, 68, 68, 0.5);
+    box-shadow: 0 0 30px rgba(239, 68, 68, 0.3);
+    animation: none;
+}
+
+/* Icon */
+.mic-icon {
+    width: 36px;
+    height: 36px;
+    transition: color var(--transition-fast);
+}
+
+.mic-listening .mic-icon {
+    color: #fca5a5;
+}
+
+@media (max-width: 640px) {
+    .mic-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .mic-button {
+        width: 84px;
+        height: 84px;
+    }
+
+    .mic-idle-ring {
+        width: 94px;
+        height: 94px;
+    }
+
+    .mic-ripple {
+        width: 84px;
+        height: 84px;
+    }
+
+    .mic-icon {
+        width: 30px;
+        height: 30px;
+    }
+}

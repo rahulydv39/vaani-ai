@@ -1,0 +1,108 @@
+/* ===== CONVERSATION HISTORY ===== */
+
+.conv-history {
+    animation: fade-in 0.4s ease;
+}
+
+.conv-history-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.conv-history-icon {
+    font-size: 1rem;
+}
+
+.conv-history-title {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+}
+
+/* --- Bubble Pairs --- */
+.conv-bubbles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.conv-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    animation: fade-in 0.3s ease;
+}
+
+/* --- Individual Bubbles --- */
+.conv-bubble {
+    max-width: 85%;
+    padding: 12px 16px;
+    border-radius: var(--radius-md);
+    backdrop-filter: var(--blur);
+    -webkit-backdrop-filter: var(--blur);
+    transition: all var(--transition-base);
+}
+
+.conv-bubble:hover {
+    transform: translateY(-1px);
+}
+
+/* User bubble — left aligned */
+.conv-user {
+    align-self: flex-start;
+    background: var(--hindi-bg);
+    border: 1px solid var(--hindi-border);
+    border-bottom-left-radius: 4px;
+}
+
+/* Coach bubble — right aligned */
+.conv-coach {
+    align-self: flex-end;
+    background: var(--english-bg);
+    border: 1px solid var(--english-border);
+    border-bottom-right-radius: 4px;
+}
+
+/* --- Tags --- */
+.bubble-tag {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+    opacity: 0.7;
+}
+
+.conv-user .bubble-tag {
+    color: var(--hindi-accent);
+}
+
+.conv-coach .bubble-tag {
+    color: var(--english-accent);
+}
+
+/* --- Text --- */
+.bubble-text {
+    font-family: var(--font-family);
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 640px) {
+    .conv-bubble {
+        max-width: 90%;
+        padding: 10px 14px;
+    }
+}

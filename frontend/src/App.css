@@ -1,0 +1,133 @@
+/* ===== APP LAYOUT ===== */
+
+.app {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Main Content --- */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 24px 20px 40px;
+}
+
+.main-inner {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* --- Mic Hero Section --- */
+.mic-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0 16px;
+    gap: 8px;
+}
+
+.mic-status-text {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-top: 8px;
+    transition: color var(--transition-base);
+    min-height: 24px;
+}
+
+.mic-status-text.listening {
+    color: var(--listening-color);
+}
+
+.mic-status-text.processing {
+    color: var(--accent-light);
+}
+
+.mic-status-text.result {
+    color: var(--success);
+    animation: success-check 0.4s ease;
+}
+
+/* --- Error Card --- */
+.error-card {
+    border-color: rgba(248, 113, 113, 0.25) !important;
+    background: rgba(248, 113, 113, 0.06) !important;
+    animation: card-enter 0.3s ease;
+}
+
+.error-text {
+    font-size: 0.88rem;
+    color: var(--error);
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* --- Results --- */
+.results-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- Coach Response Card --- */
+.coach-response {
+    animation: card-enter 0.5s ease;
+    border-color: var(--border-accent) !important;
+}
+
+.coach-response-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-subtle);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.coach-response-title {
+    color: var(--accent-light);
+}
+
+.coach-response-text {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* --- Conversation History --- */
+.history-section {
+    animation: fade-in 0.5s ease;
+}
+
+/* --- Responsive --- */
+@media (max-width: 640px) {
+    .main-content {
+        padding: 16px 14px 32px;
+    }
+
+    .main-inner {
+        gap: 20px;
+    }
+
+    .mic-section {
+        padding: 20px 0 8px;
+    }
+}
