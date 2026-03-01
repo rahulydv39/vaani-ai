@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* ===== VAANI AI – DESIGN SYSTEM ===== */
 
 /* --- CSS Custom Properties --- */

@@ -1,0 +1,348 @@
+INFO:     Will watch for changes in these directories: ['/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [58537] using StatReload
+ggml_metal_init: skipping kernel_get_rows_bf16                     (not supported)
+ggml_metal_init: skipping kernel_set_rows_bf16                     (not supported)
+ggml_metal_init: skipping kernel_mul_mv_bf16_f32                   (not supported)
+ggml_metal_init: skipping kernel_mul_mv_bf16_f32_c4                (not supported)
+ggml_metal_init: skipping kernel_mul_mv_bf16_f32_1row              (not supported)
+ggml_metal_init: skipping kernel_mul_mv_bf16_f32_l4                (not supported)
+ggml_metal_init: skipping kernel_mul_mv_bf16_bf16                  (not supported)
+ggml_metal_init: skipping kernel_mul_mv_id_bf16_f32                (not supported)
+ggml_metal_init: skipping kernel_mul_mm_bf16_f32                   (not supported)
+ggml_metal_init: skipping kernel_mul_mm_id_bf16_f16                (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_bf16_h64           (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_bf16_h80           (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_bf16_h96           (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_bf16_h112          (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_bf16_h128          (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_bf16_h192          (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_bf16_hk192_hv128   (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_bf16_h256          (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_bf16_hk576_hv512   (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_vec_bf16_h64       (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_vec_bf16_h96       (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_vec_bf16_h128      (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_vec_bf16_h192      (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_vec_bf16_hk192_hv128 (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_vec_bf16_h256      (not supported)
+ggml_metal_init: skipping kernel_flash_attn_ext_vec_bf16_hk576_hv512 (not supported)
+ggml_metal_init: skipping kernel_cpy_f32_bf16                      (not supported)
+ggml_metal_init: skipping kernel_cpy_bf16_f32                      (not supported)
+ggml_metal_init: skipping kernel_cpy_bf16_bf16                     (not supported)
+INFO:     Started server process [58540]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Loading TTS model from /Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/models/tts/en_US-lessac-medium.onnx...
+INFO:     127.0.0.1:65223 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65532 - "OPTIONS /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65532 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49152 - "GET /audio/4f261ed7-5b36-4593-9c2f-70fe57c62d8f.wav HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56470 - "OPTIONS /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56474 - "GET /audio/1a6af09c-2e92-42be-9bdc-597cb8b10d2a.wav HTTP/1.1" 404 Not Found
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+INFO:     127.0.0.1:56471 - "POST /voice-chat HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/uvicorn/protocols/http/h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/fastapi/applications.py", line 1134, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 425, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 313, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahulkumar/llama.cpp/on-device-language-tutor/backend/main.py", line 118, in voice_chat
+    Your task:
+        ^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 569, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ffmpeg', '-y', '-i', '/tmp/8cb1628b-ed9c-4c01-9d50-efa0b84d598c.mp3', '-ar', '16000', '-ac', '1', '/tmp/8cb1628b-ed9c-4c01-9d50-efa0b84d598c.wav']' died with <Signals.SIGKILL: 9>.
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+[aist#0:0/pcm_s16le @ 0x800c04180] Guessed Channel Layout: mono
+Input #0, wav, from '/tmp/5abbe00d-f9e9-4d61-9734-b8954570f9ba.mp3':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Duration: 00:00:03.00, bitrate: 256 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/tmp/5abbe00d-f9e9-4d61-9734-b8954570f9ba.wav':
+  Metadata:
+    ISFT            : Lavf62.3.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc62.11.100 pcm_s16le
+[out#0/wav @ 0x800824180] video:0KiB audio:94KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.081250%
+size=      94KiB time=00:00:03.00 bitrate= 256.2kbits/s speed= 630x elapsed=0:00:00.00    
+WARNING:  StatReload detected changes in 'main.py'. Reloading...
+INFO:      - "POST /voice-chat HTTP/1.1" 200 OK
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, matroska,webm, from '/tmp/08cc0891-3766-4b49-998d-280138b02efe.mp3':
+  Metadata:
+    encoder         : Chrome
+  Duration: 00:00:04.38, start: 0.000000, bitrate: 131 kb/s
+  Stream #0:0(eng): Audio: opus, 48000 Hz, mono, fltp (default)
+Stream mapping:
+  Stream #0:0 -> #0:0 (opus (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/tmp/08cc0891-3766-4b49-998d-280138b02efe.wav':
+  Metadata:
+    ISFT            : Lavf62.3.100
+  Stream #0:0(eng): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.11.100 pcm_s16le
+[opus @ 0x92ac3c700] Error parsing Opus packet header.
+[out#0/wav @ 0x92ac086c0] video:0KiB audio:139KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.054899%
+size=     139KiB time=00:00:04.43 bitrate= 256.2kbits/s speed= 642x elapsed=0:00:00.00    
+INFO:      - "POST /voice-chat HTTP/1.1" 200 OK
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, matroska,webm, from '/tmp/c3af3cd9-7e65-4ca2-8d50-1a89bf6e26e6.mp3':
+  Metadata:
+    encoder         : Chrome
+  Duration: 00:00:04.38, start: 0.000000, bitrate: 131 kb/s
+  Stream #0:0(eng): Audio: opus, 48000 Hz, mono, fltp (default)
+Stream mapping:
+  Stream #0:0 -> #0:0 (opus (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/tmp/c3af3cd9-7e65-4ca2-8d50-1a89bf6e26e6.wav':
+  Metadata:
+    ISFT            : Lavf62.3.100
+  Stream #0:0(eng): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.11.100 pcm_s16le
+[opus @ 0x8aac68700] Error parsing Opus packet header.
+[out#0/wav @ 0x8aac6c180] video:0KiB audio:139KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.054899%
+size=     139KiB time=00:00:04.43 bitrate= 256.2kbits/s speed= 790x elapsed=0:00:00.00    
+INFO:      - "POST /voice-chat HTTP/1.1" 200 OK
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, matroska,webm, from '/tmp/3bebd9f6-9aa3-4377-ad04-97ed846ccaef.mp3':
+  Metadata:
+    encoder         : Chrome
+  Duration: 00:00:04.38, start: 0.000000, bitrate: 131 kb/s
+  Stream #0:0(eng): Audio: opus, 48000 Hz, mono, fltp (default)
+Stream mapping:
+  Stream #0:0 -> #0:0 (opus (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/tmp/3bebd9f6-9aa3-4377-ad04-97ed846ccaef.wav':
+  Metadata:
+    ISFT            : Lavf62.3.100
+  Stream #0:0(eng): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.11.100 pcm_s16le
+[opus @ 0x7f0c48700] Error parsing Opus packet header.
+[out#0/wav @ 0x7f0c4c180] video:0KiB audio:139KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.054899%
+size=     139KiB time=00:00:04.43 bitrate= 256.2kbits/s speed= 783x elapsed=0:00:00.00    
+INFO:      - "POST /voice-chat HTTP/1.1" 200 OK
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, matroska,webm, from '/tmp/59d9c78d-bae3-4220-ba08-e3d8b5468fa3.mp3':
+  Metadata:
+    encoder         : Chrome
+  Duration: 00:00:04.38, start: 0.000000, bitrate: 131 kb/s
+  Stream #0:0(eng): Audio: opus, 48000 Hz, mono, fltp (default)
+Stream mapping:
+  Stream #0:0 -> #0:0 (opus (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/tmp/59d9c78d-bae3-4220-ba08-e3d8b5468fa3.wav':
+  Metadata:
+    ISFT            : Lavf62.3.100
+  Stream #0:0(eng): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.11.100 pcm_s16le
+[opus @ 0xb6cc28700] Error parsing Opus packet header.
+[out#0/wav @ 0xb6cc2c180] video:0KiB audio:139KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.054899%
+size=     139KiB time=00:00:04.43 bitrate= 256.2kbits/s speed= 823x elapsed=0:00:00.00    
+INFO:      - "POST /voice-chat HTTP/1.1" 200 OK
+INFO:      - "POST /transcribe HTTP/1.1" 404 Not Found
+INFO:      - "POST /transcribe HTTP/1.1" 404 Not Found
+INFO:      - "POST /transcribe HTTP/1.1" 404 Not Found
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, matroska,webm, from '/tmp/40e10e4f-aaed-40d1-b24a-9d4047031a9f.mp3':
+  Metadata:
+    encoder         : Chrome
+  Duration: 00:00:03.84, start: 0.000000, bitrate: 131 kb/s
+  Stream #0:0(eng): Audio: opus, 48000 Hz, mono, fltp (default)
+Stream mapping:
+  Stream #0:0 -> #0:0 (opus (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/tmp/40e10e4f-aaed-40d1-b24a-9d4047031a9f.wav':
+  Metadata:
+    ISFT            : Lavf62.3.100
+  Stream #0:0(eng): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.11.100 pcm_s16le
+[opus @ 0x8b0c48700] Error parsing Opus packet header.
+[out#0/wav @ 0x8b0c4c180] video:0KiB audio:122KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.062500%
+size=     122KiB time=00:00:03.89 bitrate= 256.2kbits/s speed= 382x elapsed=0:00:00.01    
+INFO:      - "POST /voice-chat HTTP/1.1" 200 OK
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, matroska,webm, from '/tmp/ef634ed2-7374-4be1-a696-3055c0fe746c.mp3':
+  Metadata:
+    encoder         : Chrome
+  Duration: 00:00:04.14, start: 0.000000, bitrate: 131 kb/s
+  Stream #0:0(eng): Audio: opus, 48000 Hz, mono, fltp (default)
+Stream mapping:
+  Stream #0:0 -> #0:0 (opus (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/tmp/ef634ed2-7374-4be1-a696-3055c0fe746c.wav':
+  Metadata:
+    ISFT            : Lavf62.3.100
+  Stream #0:0(eng): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.11.100 pcm_s16le
+[opus @ 0x906c3c700] Error parsing Opus packet header.
+[out#0/wav @ 0x906c086c0] video:0KiB audio:131KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.058036%
+size=     131KiB time=00:00:04.19 bitrate= 256.2kbits/s speed=51.2x elapsed=0:00:00.08    
+INFO:      - "POST /voice-chat HTTP/1.1" 200 OK
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, matroska,webm, from '/tmp/43f01786-a154-434c-b8bc-5aa558fa95ed.mp3':
+  Metadata:
+    encoder         : Chrome
+  Duration: 00:00:04.32, start: 0.000000, bitrate: 131 kb/s
+  Stream #0:0(eng): Audio: opus, 48000 Hz, mono, fltp (default)
+Stream mapping:
+  Stream #0:0 -> #0:0 (opus (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/tmp/43f01786-a154-434c-b8bc-5aa558fa95ed.wav':
+  Metadata:
+    ISFT            : Lavf62.3.100
+  Stream #0:0(eng): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.11.100 pcm_s16le
+[opus @ 0x789010700] Error parsing Opus packet header.
+[out#0/wav @ 0x78880c180] video:0KiB audio:137KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.055651%
+size=     137KiB time=00:00:04.37 bitrate= 256.2kbits/s speed= 187x elapsed=0:00:00.02    
+INFO:      - "POST /voice-chat HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [58540]
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x00000001f2bc2c40 (most recent call first):
+  <no Python frame>
+INFO:     Stopping reloader process [58537]

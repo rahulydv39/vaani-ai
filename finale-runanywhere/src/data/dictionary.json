@@ -1,0 +1,324 @@
+{
+  "ability": {
+    "word": "ability",
+    "pos": "noun",
+    "meaning_en": "the power or skill to do something",
+    "meaning_hi": "क्षमता",
+    "example": "She has the ability to learn fast."
+  },
+  "accept": {
+    "word": "accept",
+    "pos": "verb",
+    "meaning_en": "to consent to receive",
+    "meaning_hi": "स्वीकार करना",
+    "example": "Please accept this small gift."
+  },
+  "action": {
+    "word": "action",
+    "pos": "noun",
+    "meaning_en": "the fact or process of doing something",
+    "meaning_hi": "कार्रवाई",
+    "example": "We need to take action immediately."
+  },
+  "always": {
+    "word": "always",
+    "pos": "adverb",
+    "meaning_en": "at all times; on all occasions",
+    "meaning_hi": "हमेशा",
+    "example": "I will always remember you."
+  },
+  "beautiful": {
+    "word": "beautiful",
+    "pos": "adjective",
+    "meaning_en": "pleasing the senses or mind aesthetically",
+    "meaning_hi": "सुंदर",
+    "example": "The sunset was extremely beautiful."
+  },
+  "become": {
+    "word": "become",
+    "pos": "verb",
+    "meaning_en": "begin to be",
+    "meaning_hi": "बनना",
+    "example": "He wants to become a doctor."
+  },
+  "believe": {
+    "word": "believe",
+    "pos": "verb",
+    "meaning_en": "accept as true; feel sure of the truth",
+    "meaning_hi": "विश्वास करना",
+    "example": "I believe you can do it!"
+  },
+  "build": {
+    "word": "build",
+    "pos": "verb",
+    "meaning_en": "construct by putting parts together",
+    "meaning_hi": "निर्माण करना",
+    "example": "They plan to build a new house."
+  },
+  "business": {
+    "word": "business",
+    "pos": "noun",
+    "meaning_en": "a person's regular occupation or trade",
+    "meaning_hi": "व्यापार",
+    "example": "He runs a successful clothing business."
+  },
+  "care": {
+    "word": "care",
+    "pos": "noun",
+    "meaning_en": "the provision of what is necessary for health or protection",
+    "meaning_hi": "देखभाल",
+    "example": "You need to take care of yourself."
+  },
+  "chance": {
+    "word": "chance",
+    "pos": "noun",
+    "meaning_en": "a possibility of something happening",
+    "meaning_hi": "मौका",
+    "example": "This is your last chance."
+  },
+  "children": {
+    "word": "children",
+    "pos": "noun",
+    "meaning_en": "young human beings",
+    "meaning_hi": "बच्चे",
+    "example": "The children are playing outside."
+  },
+  "choose": {
+    "word": "choose",
+    "pos": "verb",
+    "meaning_en": "pick out as being the best of two or more alternatives",
+    "meaning_hi": "चुनना",
+    "example": "Please choose your favorite color."
+  },
+  "communicate": {
+    "word": "communicate",
+    "pos": "verb",
+    "meaning_en": "share or exchange information",
+    "meaning_hi": "संवाद करना",
+    "example": "We must communicate with clarity."
+  },
+  "decide": {
+    "word": "decide",
+    "pos": "verb",
+    "meaning_en": "come to a resolution in the mind",
+    "meaning_hi": "तय करना",
+    "example": "I must decide what to eat for lunch."
+  },
+  "development": {
+    "word": "development",
+    "pos": "noun",
+    "meaning_en": "the process of growing or causing to grow",
+    "meaning_hi": "विकास",
+    "example": "The overall development of the city is impressive."
+  },
+  "dream": {
+    "word": "dream",
+    "pos": "noun",
+    "meaning_en": "a series of thoughts or images during sleep",
+    "meaning_hi": "सपना",
+    "example": "I had a beautiful dream last night."
+  },
+  "education": {
+    "word": "education",
+    "pos": "noun",
+    "meaning_en": "the process of receiving or giving systematic instruction",
+    "meaning_hi": "शिक्षा",
+    "example": "Education is the key to success."
+  },
+  "effort": {
+    "word": "effort",
+    "pos": "noun",
+    "meaning_en": "a vigorous or determined attempt",
+    "meaning_hi": "प्रयास",
+    "example": "She made a great effort to finish the project."
+  },
+  "everyone": {
+    "word": "everyone",
+    "pos": "pronoun",
+    "meaning_en": "every person",
+    "meaning_hi": "हर कोई",
+    "example": "Everyone is excited for the trip."
+  },
+  "family": {
+    "word": "family",
+    "pos": "noun",
+    "meaning_en": "a group of parents and children living together",
+    "meaning_hi": "परिवार",
+    "example": "I love spending time with my family."
+  },
+  "friend": {
+    "word": "friend",
+    "pos": "noun",
+    "meaning_en": "a person with whom one has a bond of mutual affection",
+    "meaning_hi": "दोस्त",
+    "example": "He is my best friend."
+  },
+  "future": {
+    "word": "future",
+    "pos": "noun",
+    "meaning_en": "the time that is still to come",
+    "meaning_hi": "भविष्य",
+    "example": "The future is bright."
+  },
+  "goal": {
+    "word": "goal",
+    "pos": "noun",
+    "meaning_en": "the object of a person's ambition or effort",
+    "meaning_hi": "लक्ष्य",
+    "example": "My goal is to learn English fluently."
+  },
+  "grow": {
+    "word": "grow",
+    "pos": "verb",
+    "meaning_en": "undergo natural development by increasing in size",
+    "meaning_hi": "बढ़ना",
+    "example": "Plants need sunlight to grow."
+  },
+  "happy": {
+    "word": "happy",
+    "pos": "adjective",
+    "meaning_en": "feeling or showing pleasure or contentment",
+    "meaning_hi": "खुश",
+    "example": "She looks very happy today."
+  },
+  "health": {
+    "word": "health",
+    "pos": "noun",
+    "meaning_en": "the state of being free from illness or injury",
+    "meaning_hi": "स्वास्थ्य",
+    "example": "Good health is wealth."
+  },
+  "help": {
+    "word": "help",
+    "pos": "verb",
+    "meaning_en": "make it easier or possible for someone to do something",
+    "meaning_hi": "मदद",
+    "example": "Can you help me with this box?"
+  },
+  "important": {
+    "word": "important",
+    "pos": "adjective",
+    "meaning_en": "of great significance or value",
+    "meaning_hi": "महत्वपूर्ण",
+    "example": "It is important to drink water."
+  },
+  "knowledge": {
+    "word": "knowledge",
+    "pos": "noun",
+    "meaning_en": "information and skills acquired through experience",
+    "meaning_hi": "ज्ञान",
+    "example": "Knowledge gives you power."
+  },
+  "learn": {
+    "word": "learn",
+    "pos": "verb",
+    "meaning_en": "acquire knowledge of or skill in something",
+    "meaning_hi": "सीखना",
+    "example": "I want to learn how to swim."
+  },
+  "life": {
+    "word": "life",
+    "pos": "noun",
+    "meaning_en": "the existence of an individual human being",
+    "meaning_hi": "जीवन",
+    "example": "Life is a beautiful journey."
+  },
+  "listen": {
+    "word": "listen",
+    "pos": "verb",
+    "meaning_en": "give one's attention to a sound",
+    "meaning_hi": "सुनना",
+    "example": "Please listen carefully to the instructions."
+  },
+  "money": {
+    "word": "money",
+    "pos": "noun",
+    "meaning_en": "a current medium of exchange in the form of coins and banknotes",
+    "meaning_hi": "पैसे",
+    "example": "I need some money to buy a coffee."
+  },
+  "nature": {
+    "word": "nature",
+    "pos": "noun",
+    "meaning_en": "the phenomena of the physical world",
+    "meaning_hi": "प्रकृति",
+    "example": "He enjoys being out in nature."
+  },
+  "opportunity": {
+    "word": "opportunity",
+    "pos": "noun",
+    "meaning_en": "a set of circumstances that makes it possible to do something",
+    "meaning_hi": "अवसर",
+    "example": "This job is a great opportunity."
+  },
+  "person": {
+    "word": "person",
+    "pos": "noun",
+    "meaning_en": "a human being regarded as an individual",
+    "meaning_hi": "व्यक्ति",
+    "example": "He is a very kind person."
+  },
+  "practice": {
+    "word": "practice",
+    "pos": "verb",
+    "meaning_en": "perform an activity regularly to improve one's skill",
+    "meaning_hi": "अभ्यास",
+    "example": "You need to practice every day."
+  },
+  "quality": {
+    "word": "quality",
+    "pos": "noun",
+    "meaning_en": "the standard of something as measured against other things",
+    "meaning_hi": "गुणवत्ता",
+    "example": "This TV has excellent picture quality."
+  },
+  "question": {
+    "word": "question",
+    "pos": "noun",
+    "meaning_en": "a sentence worded or expressed so as to elicit information",
+    "meaning_hi": "सवाल",
+    "example": "Do you have any questions?"
+  },
+  "respect": {
+    "word": "respect",
+    "pos": "noun",
+    "meaning_en": "a feeling of deep admiration for someone",
+    "meaning_hi": "सम्मान",
+    "example": "You should respect your elders."
+  },
+  "success": {
+    "word": "success",
+    "pos": "noun",
+    "meaning_en": "the accomplishment of an aim or purpose",
+    "meaning_hi": "सफलता",
+    "example": "Her hard work led to her success."
+  },
+  "time": {
+    "word": "time",
+    "pos": "noun",
+    "meaning_en": "the indefinite continued progress of existence",
+    "meaning_hi": "समय",
+    "example": "What time is the meeting?"
+  },
+  "understand": {
+    "word": "understand",
+    "pos": "verb",
+    "meaning_en": "perceive the intended meaning of words",
+    "meaning_hi": "समझना",
+    "example": "I clearly understand your problem."
+  },
+  "value": {
+    "word": "value",
+    "pos": "noun",
+    "meaning_en": "the regard that something is held to deserve",
+    "meaning_hi": "मूल्य",
+    "example": "I value your honesty."
+  },
+  "work": {
+    "word": "work",
+    "pos": "verb",
+    "meaning_en": "activity involving mental or physical effort done in order to achieve a purpose",
+    "meaning_hi": "काम",
+    "example": "I need to work on my assignment."
+  }
+}

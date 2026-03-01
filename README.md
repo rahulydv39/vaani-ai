@@ -29,5 +29,3 @@ npm run dev
 ## 📥 Download models
 
 Place models manually inside:
-
-/models
